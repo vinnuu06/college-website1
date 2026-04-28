@@ -15,7 +15,7 @@
     }
 
     function initSocket() {
-        const socket = io('http://localhost:5000');
+        const socket = io('https://college-website1-0ryx.onrender.com');
         const user = JSON.parse(localStorage.getItem('user'));
 
         if (user && user._id) {

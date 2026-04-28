@@ -15,7 +15,7 @@
     
     <div class="box">
         <h3>Step 1: Check Backend Availability</h3>
-        <button onclick="checkHealth()">Test Connection to 127.0.0.1:5000</button>
+        <button onclick="checkHealth()">Test Connection to Production API</button>
         <p id="health-result">--</p>
     </div>
 
@@ -31,7 +31,7 @@
             const res = document.getElementById('health-result');
             res.innerText = "Checking...";
             try {
-                const response = await fetch('http://127.0.0.1:5000/api/health');
+                const response = await fetch('https://college-website1-0ryx.onrender.com/api/health');
                 const data = await response.json();
                 res.innerHTML = `<span class="success">ONLINE! ✅ (Status: ${response.status})</span>`;
             } catch (e) {

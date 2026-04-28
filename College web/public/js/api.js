@@ -3,7 +3,7 @@
  * Complete API integration module for all backend endpoints
  */
 
-const API_BASE_URL = 'http://192.168.0.100:5000/api';
+const API_BASE_URL = 'https://college-website1-0ryx.onrender.com/api';
 const API_TIMEOUT_MS = 15000;
 
 // ============= TOKEN MANAGEMENT =============
